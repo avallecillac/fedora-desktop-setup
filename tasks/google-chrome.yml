@@ -1,0 +1,5 @@
+- name: Enable Chrome repo
+  shell: dnf config-manager --set-enabled google-chrome
+
+- name: Install Chrome
+  dnf: name=google-chrome-stable
