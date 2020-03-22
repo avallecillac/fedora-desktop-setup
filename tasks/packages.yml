@@ -5,6 +5,7 @@
       - gnome-shell-extension-dash-to-dock
       - gnome-shell-extension-applications-list
       - telnet
+      - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - openfortivpn
 - name: Configure Openfortivpn host
   dconf:
