@@ -1,7 +1,20 @@
 - name: Install packages
-  dnf: 
-    name: 
-      - fedora-workstation-repositories
-      # - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{fedora_version}}.noarch.rpm
-      # - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{fedora_version}}.noarch.rpm
+  dnf:
+    name:
+      - gnome-tweak-tool
+      - gnome-shell-extension-dash-to-dock
+      - gnome-shell-extension-applications-list
       - telnet
+      - openfortivpn
+- name: Configure Openfortivpn host
+  dconf:
+    key: /etc/openfortivpn/config/host
+    value: "vpnportal.albelli.net"
+- name: Configure Openfortivpn port
+  dconf:
+    key: /etc/openfortivpn/config/port
+    value: "443"
+- name: Configure Openfortivpn username
+  dconf:
+    key: /etc/openfortivpn/config/username
+    value: "avallecilla@albelli.net"

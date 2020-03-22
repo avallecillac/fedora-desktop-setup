@@ -1,4 +1,4 @@
-1) Install Chrome
+1) Install Chrome X
 2) Install Dash To Dock
 3) Install Windows List
 4) Install Applications Menu
@@ -11,8 +11,8 @@ fastestmirror=true
 deltarpm=true
 
 7) sudo dnf update --refresh
-8) sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
-9) sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+8) sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+9) sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 10) sudo dnf install gnome-tweaks-tool -y
 11) sudo dnf install copyq -y
 12) sudo dnf install snapd -y
@@ -23,5 +23,17 @@ sudo dnf check-update
 sudo dnf install code -y
 
 14) Install Slack
+15) Install .net
+https://dotnet.microsoft.com/download/linux-package-manager/sdk-current
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo
+sudo dnf install dotnet-sdk-3.0
+16) Install nuget cli
+rpm --import "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
+su -c 'curl https://download.mono-project.com/repo/centos8-stable.repo | tee /etc/yum.repos.d/mono-centos8-stable.repo'
+dnf update
+dnf install mono-devel mono-complete
+https://www.mono-project.com/download/stable/#download-lin-fedora
+https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools
 
-
+sudo ansible-pull -U https://github.com/avallecillac/fedora-workstation-setup.git
