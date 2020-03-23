@@ -1,21 +1,21 @@
 - name: Enable Flathub repository
-      become: yes
-      command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    - name: Install Fractal
-      become: yes
-      command: flatpak install --assumeyes flathub org.gnome.Fractal
-    - name: Install Spotify
-      become: yes
-      command: flatpak install --assumeyes flathub com.spotify.Client
-    - name: Install Slack
-      become: yes
-      command: flatpak install --assumeyes flathub com.slack.Slack
-    - name: Install VS Code
-      become: yes
-      command: flatpak install --assumeyes flathub com.visualstudio.code
-    - name: Install Skype
-      become: yes
-      command: flatpak install --assumeyes flathub com.skype.Client
-    - name: Install VLC
-      become: yes
-      command: flatpak install --assumeyes flathub org.videolan.VLC
+  become: yes
+  command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+- name: Install Fractal
+  become: yes
+  command: flatpak install --assumeyes flathub org.gnome.Fractal
+- name: Install Spotify
+  become: yes
+  command: flatpak install --assumeyes flathub com.spotify.Client
+- name: Install Slack
+  become: yes
+  command: flatpak install --assumeyes flathub com.slack.Slack
+- name: Install VS Code
+  become: yes
+  command: flatpak install --assumeyes flathub com.visualstudio.code
+- name: Install Skype
+  become: yes
+  command: flatpak install --assumeyes flathub com.skype.Client
+- name: Install VLC
+  become: yes
+  command: flatpak install --assumeyes flathub org.videolan.VLC

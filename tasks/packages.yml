@@ -3,19 +3,21 @@
     name:
       - gnome-tweak-tool
       - gnome-shell-extension-dash-to-dock
-      - gnome-shell-extension-applications-list
+#      - gnome-shell-extension-applications-list
       - telnet
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+      - https://zoom.us/client/latest/zoom_x86_64.rpm
       - openfortivpn
-- name: Configure Openfortivpn host
-  dconf:
-    key: /etc/openfortivpn/config/host
-    value: "vpnportal.albelli.net"
-- name: Configure Openfortivpn port
-  dconf:
-    key: /etc/openfortivpn/config/port
-    value: "443"
-- name: Configure Openfortivpn username
-  dconf:
-    key: /etc/openfortivpn/config/username
-    value: "avallecilla@albelli.net"
+      - jq
+#- name: Configure Openfortivpn host
+#  dconf:
+#    key: /etc/openfortivpn/config/host
+#    value: "vpnportal.albelli.net"
+#- name: Configure Openfortivpn port
+#  dconf:
+#    key: /etc/openfortivpn/config/port
+#    value: "443"
+#- name: Configure Openfortivpn username
+#  dconf:
+#    key: /etc/openfortivpn/config/username
+#    value: "avallecilla@albelli.net"
