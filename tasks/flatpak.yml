@@ -1,9 +1,6 @@
 - name: Enable Flathub repository
   become: yes
   command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-- name: Install Fractal
-  become: yes
-  command: flatpak install --assumeyes flathub org.gnome.Fractal
 - name: Install Spotify
   become: yes
   command: flatpak install --assumeyes flathub com.spotify.Client
@@ -19,3 +16,9 @@
 - name: Install VLC
   become: yes
   command: flatpak install --assumeyes flathub org.videolan.VLC
+- name: Install Zoom
+  become: yes
+  command: flatpak install --assumeyes flathub us.zoom.Zoom
+- name: Install Pycharm
+  become: yes
+  command: flatpak install --assumeyes flathub com.jetbrains.PyCharm-Community

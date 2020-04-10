@@ -2,13 +2,17 @@
   dnf:
     name:
       - gnome-tweak-tool
-      - gnome-shell-extension-dash-to-dock
-#      - gnome-shell-extension-applications-list
       - telnet
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - https://zoom.us/client/latest/zoom_x86_64.rpm
       - openfortivpn
       - jq
+      - groovy
+      - dnf-plugins-core
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - ansible
 #- name: Configure Openfortivpn host
 #  dconf:
 #    key: /etc/openfortivpn/config/host

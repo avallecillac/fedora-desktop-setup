@@ -8,3 +8,5 @@ sudo dnf upgrade --best --allowerasing --refresh -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+ansible-playbook local.yml
