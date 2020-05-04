@@ -22,3 +22,6 @@
 - name: Install Pycharm
   become: yes
   command: flatpak install --assumeyes flathub com.jetbrains.PyCharm-Community
+- name: Install Postman
+  become: yes
+  command: flatpak install --assumeyes flathub com.getpostman.Postman
